@@ -39,7 +39,12 @@
 <nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-border" aria-label="Principal">
 	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="flex items-center justify-between h-16 lg:h-20">
-			<a href="/" class="group" onclick={closeAll}>
+			<a href="/" class="group flex items-center gap-2" onclick={closeAll}>
+				<div class="flex h-8 w-8 items-center justify-center rounded-lg bg-medical/10 text-medical ring-1 ring-medical/20">
+					<svg class="h-4.5 w-4.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5v13.5" />
+					</svg>
+				</div>
 				<span class="text-lg font-extrabold tracking-tight font-[family-name:var(--font-heading)]"><span class="text-deep">Archivo</span><span class="text-medical">Salud</span></span>
 			</a>
 

@@ -29,7 +29,12 @@
 	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8">
 			<div class="lg:col-span-2">
-				<a href="/" class="mb-5 inline-block">
+				<a href="/" class="mb-5 inline-flex items-center gap-2">
+					<div class="flex h-8 w-8 items-center justify-center rounded-lg bg-medical/15 text-medical ring-1 ring-medical/25">
+						<svg class="h-4.5 w-4.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5v13.5" />
+						</svg>
+					</div>
 					<span class="text-lg font-extrabold tracking-tight font-[family-name:var(--font-heading)]"><span class="text-white">Archivo</span><span class="text-medical">Salud</span></span>
 				</a>
 			<p class="text-sm leading-relaxed max-w-sm mb-5">
