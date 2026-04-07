@@ -175,7 +175,7 @@
 							</div>
 						</div>
 
-						<div class="relative z-10 flex-1 min-w-0 sm:pt-1">
+						<div class="relative z-10 flex-1 min-w-0 ml-10 sm:ml-0 sm:pt-1">
 							<div
 								class="rounded-2xl border border-border/90 bg-gradient-to-br from-white via-light/30 to-surface/40 p-6 sm:p-8 shadow-sm transition-all duration-300 group-hover:border-medical/25 group-hover:shadow-2xl group-hover:shadow-deep/[0.06] group-hover:-translate-y-0.5"
 							>
