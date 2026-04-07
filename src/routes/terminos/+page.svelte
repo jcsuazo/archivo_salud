@@ -127,8 +127,8 @@
 				</h2>
 				<p>
 					Para consultas sobre estos términos, escríbanos a
-					<a href="mailto:info@archivosalud.ai" class="font-semibold text-medical hover:text-medical-dark"
-						>info@archivosalud.ai</a
+					<a href="mailto:info@archivosalud.com" class="font-semibold text-medical hover:text-medical-dark"
+						>info@archivosalud.com</a
 					>.
 				</p>
 			</section>

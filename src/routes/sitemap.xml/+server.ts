@@ -24,7 +24,7 @@ const pages = [
 ];
 
 export const GET: RequestHandler = () => {
-	const baseUrl = 'https://archivosalud.ai';
+	const baseUrl = 'https://archivosalud.com';
 	const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${pages.map(path => `  <url>

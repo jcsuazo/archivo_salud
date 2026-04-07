@@ -13,7 +13,7 @@
 	title="Política de privacidad"
 	description="Información sobre el tratamiento de sus datos personales de conformidad con la Ley núm. 172-13 sobre Protección Integral de Datos Personales de República Dominicana y la Constitución de la República."
 	ctaText="Contacto por datos personales"
-	ctaHref="mailto:info@archivosalud.ai"
+	ctaHref="mailto:info@archivosalud.com"
 />
 
 <section class="bg-white py-14 sm:py-20 lg:py-24">
@@ -49,8 +49,8 @@
 				</p>
 				<p class="mt-4">
 					Para ejercer sus derechos o formular consultas sobre privacidad puede escribirnos a
-					<a href="mailto:info@archivosalud.ai" class="font-semibold text-medical hover:text-medical-dark"
-						>info@archivosalud.ai</a
+					<a href="mailto:info@archivosalud.com" class="font-semibold text-medical hover:text-medical-dark"
+						>info@archivosalud.com</a
 					>.
 				</p>
 			</section>
@@ -128,8 +128,8 @@
 				</ul>
 				<p class="mt-4">
 					Para ejercer estos derechos, escríbanos a
-					<a href="mailto:info@archivosalud.ai" class="font-semibold text-medical hover:text-medical-dark"
-						>info@archivosalud.ai</a
+					<a href="mailto:info@archivosalud.com" class="font-semibold text-medical hover:text-medical-dark"
+						>info@archivosalud.com</a
 					>. Podremos solicitar información razonable para verificar su identidad.
 				</p>
 			</section>

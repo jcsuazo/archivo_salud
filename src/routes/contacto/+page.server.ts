@@ -35,7 +35,7 @@ export const actions: Actions = {
 		} catch (err) {
 			console.error('Email send error:', err);
 			return fail(500, {
-				error: 'No se pudo enviar el mensaje. Por favor intente más tarde o escriba directamente a info@archivosalud.ai.',
+				error: 'No se pudo enviar el mensaje. Por favor intente más tarde o escriba directamente a info@archivosalud.com.',
 				nombre, institucion, cargo, correo, telefono, tipoInstitucion, problema
 			});
 		}

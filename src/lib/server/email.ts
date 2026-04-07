@@ -35,7 +35,7 @@ export async function sendContactEmail(data: {
 
 	return transporter.sendMail({
 		from: SMTP_USER,
-		to: 'jsuazo9@gmail.com',
+		to: 'info@archivosalud.com',
 		subject: `[ArchivoSalud] Contacto de ${data.nombre} - ${data.institucion}`,
 		html,
 		replyTo: data.correo
@@ -66,7 +66,7 @@ export async function sendAgendaEmail(data: {
 
 	return transporter.sendMail({
 		from: SMTP_USER,
-		to: 'jsuazo9@gmail.com',
+		to: 'info@archivosalud.com',
 		subject: `[ArchivoSalud] Solicitud de consulta de ${data.nombre}`,
 		html,
 		replyTo: data.correo

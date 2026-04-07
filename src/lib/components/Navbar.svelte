@@ -40,7 +40,7 @@
 	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="flex items-center justify-between h-16 lg:h-20">
 			<a href="/" class="group" onclick={closeAll}>
-				<span class="text-lg font-extrabold text-deep tracking-tight font-[family-name:var(--font-heading)]">ArchivoSalud</span>
+				<span class="text-lg font-extrabold tracking-tight font-[family-name:var(--font-heading)]"><span class="text-deep">Archivo</span><span class="text-medical">Salud</span></span>
 			</a>
 
 			<!-- Desktop nav -->
