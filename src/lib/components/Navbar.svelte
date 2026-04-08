@@ -10,6 +10,7 @@
 			{ href: '/soluciones/automatizacion-administrativa', label: 'Automatización administrativa' },
 			{ href: '/soluciones/analitica-busqueda', label: 'Analítica y búsqueda' },
 			{ href: '/soluciones/soluciones-a-medida', label: 'Soluciones a medida' },
+			{ href: '/interpretar-laboratorio', label: 'Interpretar laboratorio' },
 		]},
 		{ href: '/sectores', label: 'Sectores', children: [
 			{ href: '/sectores/hospitales-publicos', label: 'Hospitales públicos' },
