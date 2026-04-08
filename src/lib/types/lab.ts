@@ -59,6 +59,7 @@ export interface JobStatus {
   job_id: string;
   status: JobStatusType;
   progress: number;
+  status_detail: string | null;
   result: LabReport | null;
   error: string | null;
   created_at: string;

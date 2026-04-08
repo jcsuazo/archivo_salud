@@ -55,11 +55,12 @@ export async function getJobStatus(jobId: string): Promise<JobStatus> {
 export function pollJobStatus(
   jobId: string,
   onUpdate: (status: JobStatus) => void,
-  intervalMs: number = 2000
+  intervalMs: number = 3000
 ): () => void {
   let active = true;
 
   const poll = async () => {
+    let interval = intervalMs;
     while (active) {
       try {
         const status = await getJobStatus(jobId);
@@ -67,10 +68,13 @@ export function pollJobStatus(
         if (status.status === 'completed' || status.status === 'failed') {
           break;
         }
+        if (status.progress > 40) {
+          interval = 5000;
+        }
       } catch (e) {
         console.error('Polling error:', e);
       }
-      await new Promise((r) => setTimeout(r, intervalMs));
+      await new Promise((r) => setTimeout(r, interval));
     }
   };
 

@@ -4,13 +4,15 @@
 	interface Props {
 		status: JobStatusType;
 		progress: number;
+		statusDetail?: string | null;
 	}
 
-	let { status, progress }: Props = $props();
+	let { status, progress, statusDetail = null }: Props = $props();
 
 	const clampedProgress = $derived(Math.min(100, Math.max(0, progress)));
 
 	const label = $derived.by(() => {
+		if (statusDetail && status === 'processing') return statusDetail;
 		switch (status) {
 			case 'pending':
 				return 'Preparando análisis...';
@@ -95,7 +97,7 @@
 			>
 				{label}
 			</p>
-			{#if status === 'processing'}
+			{#if status === 'processing' || status === 'uploading'}
 				<div class="space-y-1.5">
 					<div
 						class="h-2 w-full overflow-hidden rounded-full bg-surface border border-border"
@@ -105,12 +107,17 @@
 						aria-valuemax={100}
 					>
 						<div
-							class="h-full rounded-full bg-gradient-to-r from-medical to-medical-dark transition-[width] duration-500 ease-out"
+							class="h-full rounded-full bg-gradient-to-r from-medical to-medical-dark transition-[width] duration-700 ease-out"
 							style="width: {clampedProgress}%"
 						></div>
 					</div>
 					<p class="text-xs text-muted tabular-nums">{Math.round(clampedProgress)}%</p>
 				</div>
+				{#if status === 'processing' && clampedProgress < 90}
+					<p class="text-xs text-muted/70 italic">
+						El análisis con IA puede tomar varios minutos. No cierre esta página.
+					</p>
+				{/if}
 			{/if}
 		</div>
 	</div>

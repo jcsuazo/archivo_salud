@@ -60,15 +60,16 @@
 				consent
 			);
 			jobId = job_id;
-			jobStatus = {
-				job_id,
-				status: 'uploading',
-				progress: 0,
-				result: null,
-				error: null,
-				created_at: new Date().toISOString(),
-				updated_at: new Date().toISOString()
-			};
+		jobStatus = {
+			job_id,
+			status: 'uploading',
+			progress: 0,
+			status_detail: 'Subiendo archivo…',
+			result: null,
+			error: null,
+			created_at: new Date().toISOString(),
+			updated_at: new Date().toISOString()
+		};
 			await uploadFile(upload_url, file);
 			await notifyUploadComplete(job_id);
 			jobStatus = await getJobStatus(job_id);
@@ -114,14 +115,14 @@
 <PageHero
 	eyebrow="Inteligencia Artificial"
 	title="Interpreta tus resultados de laboratorio"
-	description="Sube tu PDF o imagen de resultados y obtén un análisis estructurado con hallazgos destacados e hipótesis clínicas en segundos."
+	description="Sube tu PDF o imagen de resultados y obtén un análisis estructurado con hallazgos destacados e hipótesis clínicas asistido por IA."
 />
 
 <section class="py-12 sm:py-16 lg:py-20 bg-white">
 	<div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
 		{#if jobId && jobStatus}
 			<div class="space-y-6">
-				<JobStatus status={jobStatus.status} progress={jobStatus.progress} />
+				<JobStatus status={jobStatus.status} progress={jobStatus.progress} statusDetail={jobStatus.status_detail} />
 				{#if error || jobStatus.status === 'failed'}
 					<div
 						class="rounded-xl border border-red-200 bg-red-50/90 p-4 sm:p-5 text-sm text-red-900 space-y-4"

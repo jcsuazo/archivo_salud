@@ -112,7 +112,7 @@
 		</div>
 	{:else if jobState && !isTerminal}
 		<div class="max-w-xl mx-auto py-8">
-			<JobStatus status={jobState.status} progress={jobState.progress} />
+			<JobStatus status={jobState.status} progress={jobState.progress} statusDetail={jobState.status_detail} />
 		</div>
 	{:else if jobState?.status === 'failed'}
 		<div
