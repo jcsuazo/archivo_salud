@@ -246,14 +246,14 @@
 									d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
 								/>
 							</svg>
-						{:else if stat.icon === 'path'}
-							<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-								<path
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5v13.5"
-								/>
-							</svg>
+					{:else if stat.icon === 'path'}
+						<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"
+							/>
+						</svg>
 						{:else if stat.icon === 'bolt'}
 							<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
 								<path
